@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: separate; /*collapse*/
+        }
+
+        th, td{
+            padding: 7px;
+        }
+
+        th{
+            text-transform: uppercase;
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #111;
+            text-align: left;
+            font-size: 90%;
+            letter-spacing: 0.1em;
+        }
+
+        tr.alternado{
+            background-color: #efefef;
+        }
+
+        th.preco, td.preco{
+            text-align: right;
+        }
+
+        tr:hover{
+            background-color:aqua;
+        }
+
+        tr.no-hover:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Estilizando Tabelas</h2>
+
+    <table>
+        <tr class="no-hover">
+            <th>Código</th>
+            <th>Produto</th>
+            <th class="preco">Preço</th>
+        </tr>
+
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td class="preco">R$ 2300</td>
+        </tr>
+
+        <tr class="alternado">
+            <td>002</td>
+            <td>Celular</td>
+            <td class="preco">R$ 2200</td>
+        </tr>
+
+        <tr>
+            <td>003</td>
+            <td>Tablet</td>
+            <td class="preco">R$ 3000</td>
+        </tr>
+
+        <tr class="alternado">
+            <td>004</td>
+            <td>Desktop</td>
+            <td class="preco">R$ 4000</td>
+        </tr>
+    </table>
+</body>
+</html>

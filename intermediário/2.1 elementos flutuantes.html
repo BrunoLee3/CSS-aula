@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- para visualizar esse exemplo, encolha a tela do edge para a direita -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos flutuantes</title>
+    <style>
+        .conteudo{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            margin: 1px;
+            float: left;
+        }
+
+        .conteudo1{
+            background-color: blue;
+            width: 150px;
+            height: 150px;
+            float: right;
+        }
+
+        .clear{
+            /* limpa o fluxo flutuante, o que força o texto para baixo das caixas 
+            em ambos os lados*/
+            clear: both; 
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        conteúdo 1
+    </div>
+
+    <div class="conteudo">
+        conteúdo 2
+    </div>
+
+    <div class="conteudo">
+        conteúdo 3
+    </div>
+
+    <p class="clear">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat euismod odio. Ut gravida posuere ipsum tempus maximus. Sed quis lorem a velit placerat tincidunt. In tempor dapibus nisi, nec pretium enim tempus vitae. Proin volutpat ullamcorper condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam quis facilisis metus. Etiam vestibulum gravida urna, nec maximus neque mattis et. Suspendisse vel pretium ex. Integer dapibus vulputate nisl, vel pulvinar ipsum dignissim a. Sed sapien neque, vestibulum vitae lobortis sit amet, euismod porta metus. Quisque et elit tempus, eleifend quam id, sodales neque. Donec congue nulla orci, vitae fringilla ante finibus id. Fusce sagittis ullamcorper arcu tristique venenatis. Integer dui ex, laoreet ut mauris ac, accumsan malesuada felis.
+    </p>
+
+    
+</body>
+</html>

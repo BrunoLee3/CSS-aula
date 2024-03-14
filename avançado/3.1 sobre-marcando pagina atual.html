@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul a{
+            width: 200px;
+            height: 40px;
+            display: block; /*links são inline por padrão*/
+            color: black;
+            text-decoration: none;
+            text-indent: 40px; /*empurra o texto para direita*/
+            line-height: 40px; /*define o tamanho da caixinha do texto para o mesmo tamanho do height*/
+            background: #e46c0a url(imagens/menu.png);
+        }
+
+        a:hover{
+            background-position: right;
+            color: white;
+        }
+
+        #home #navegacao .home a,
+        #sobre #navegacao .sobre a,
+        #noticias #navegacao .noticias{
+            background-position: right;
+            color: white;
+        }
+    </style>
+</head>
+<body id="sobre">
+    <ul id="navegacao">
+        <li class="home"><a href="">Home</a></li>
+        <li class="sobre"><a href="">Sobre</a></li>
+        <li class="noticias"><a href="">Notícias</a></li>
+        <li class="servicos"><a href="">Serviços</a></li>
+        <li class="contato"><a href="">Contato</a></li>
+    </ul>
+</body>
+</html>

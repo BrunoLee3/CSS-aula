@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        #container{
+            width: 720px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        #marca{
+            height: 100px;
+            background: #9e9e9e;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #conteudo{
+            width: 520px;
+            float: right;
+        }
+
+        #navegacao{
+            width: 180px;
+            float: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background: #d1d1d1;
+        }
+
+        #rodape{
+            clear: both;
+            background: #c4c4c4;
+            padding: 5px;
+        }
+
+        ul{
+            list-style: none;
+
+        }
+
+        ul a{
+            text-decoration: none;
+            display: block;
+            color:rgba(36, 82, 9, 0.664);
+            text-indent: 15px;
+            line-height: 30px;
+        }
+
+        a:hover{
+            color: black;
+        }
+
+        .atual a{
+            color: black;
+        }
+
+        .conteudo-principal{
+            float: left;
+            width: 320px;
+        }
+
+        .conteudo-secundario{
+            float: right;
+            width: 180px;
+            background-color: #d1d1d1;
+        }
+
+        .conteudo-secundario h2,
+        .conteudo-secundario p{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body id="home">
+    <div id="container">
+        <div id="marca">Marca</div>
+        <div id="conteudo">
+            <div class="conteudo-principal">
+                <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum pellentesque iaculis. Mauris ultricies ipsum turpis, et tempus turpis consequat et. Donec ullamcorper interdum volutpat. Aenean magna ipsum, facilisis a tortor ut, hendrerit euismod ipsum.
+            </p>
+            </div>
+
+            <div class="conteudo-secundario">
+                <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum pellentesque iaculis. Mauris ultricies ipsum turpis, et tempus turpis consequat et. Donec ullamcorper interdum volutpat. Aenean magna ipsum, facilisis a tortor ut, hendrerit euismod ipsum.
+            </p>
+            </div>
+            
+        </div>
+        <div id="navegacao">
+            <ul>
+                <li class="atual"><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+    </div>
+        <div id="rodape">Rodapé</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- para visualizar esse exemplo, encolha a tela do edge para a direita -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos flutuantes</title>
+    <style>
+        .conteudo{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            float: left; 
+        }
+
+     
+        #principal{
+            border: 1px solid red;
+            background-color: green;
+        }
+
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        
+        <div class="conteudo">
+            conteúdo 1
+        </div>
+
+        <div class="conteudo">
+            conteúdo 2
+        </div>
+
+        <div class="conteudo">
+            conteúdo 3
+        </div>
+
+        <!-- div vazia que força a div principal a expandir
+        até que todos os floats estejam dentro da div principal -->
+        <div class="clear">aa</div>
+
+    </div>
+    
+</body>
+</html>

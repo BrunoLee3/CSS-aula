@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento estático e relativo</title>
+    <style>
+        body {
+            background-color: #007fc7;
+        }
+        #container{
+            background: #fff;
+            width: 1000px;
+            margin: 10px  auto;
+        }
+
+        h1{
+            /* posição padrão */
+            position: static;
+        }
+
+        p{
+            width: 350px;
+        }
+
+        /* posição relativa */
+        .relative{
+            border: 1px solid red;
+            position: relative;
+            /* top, right, bottom, left */
+            left: 400px;
+            top: -90px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p>
+            P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat euismod odio. Ut gravida posuere ipsum tempus maximus. Sed quis lorem a velit placerat tincidunt.
+        </p>
+        <p class="relative">
+            P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat euismod odio. Ut gravida posuere ipsum tempus maximus. Sed quis lorem a velit placerat tincidunt.
+        </p>
+        <p>
+            P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat euismod odio. Ut gravida posuere ipsum tempus maximus. Sed quis lorem a velit placerat tincidunt.
+        </p>
+    </div>
+</body>
+</html>
